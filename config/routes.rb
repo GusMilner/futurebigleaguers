@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
     get '/about' => 'pages#about'
 
+    resources :users do
+      resource :profile
+    end
+
     resources :contacts
 
   # Example of regular route:
