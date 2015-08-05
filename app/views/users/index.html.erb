@@ -22,7 +22,11 @@
 								<% end %>
 								<p>
 									<%= user.profile.position %>
+									<% if user.plan_id == 2 %>
+										<span class="label label-danger">Pro</span>
+									<% end %>
 								</p>
+								
 							</div>
 
 						</div>
